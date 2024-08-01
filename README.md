@@ -1,6 +1,8 @@
 # **Dynamic Syntactic Representation Filtering and Injecting Networks for Cross-lingual Dependency Parsing**
 https://noteljj.github.io/
 
+# Download our code. [code](our%20model.jpg)
+
 # Overall Architecture
 <img src="our%20model.jpg" alt="overall architecture">
 <!--# Overall Architecture. ![overall architecture](https://github.com/noteljj/noteljj.github.io/blob/main/our%20model.jpg)-->
