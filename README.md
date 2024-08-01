@@ -3,7 +3,7 @@ https://noteljj.github.io/
 
 <img src="our%20model.jpg" alt="Description">
 
-# Overall Architecture. ![overall architecture](https://github.com/noteljj/noteljj.github.io/blob/main/our%20model.jpg)
+<!--# Overall Architecture. ![overall architecture](https://github.com/noteljj/noteljj.github.io/blob/main/our%20model.jpg)-->
 
 # Dataset Info. ![dataset](https://github.com/noteljj/noteljj.github.io/blob/main/dataset%20info.png)
 
