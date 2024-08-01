@@ -1,0 +1,157 @@
+InputLayer(
+  (_word_embed): Embedding(8844, 100, padding_idx=0)
+  (linear): Linear(in_features=768, out_features=100, bias=True)
+  (bert_embedding): Bert_Embedding(
+    (bert): XLMRobertaForMaskedLM(
+      (roberta): XLMRobertaModel(
+        (embeddings): XLMRobertaEmbeddings(
+          (word_embeddings): Embedding(250002, 768, padding_idx=1)
+          (position_embeddings): Embedding(514, 768, padding_idx=1)
+          (token_type_embeddings): Embedding(1, 768)
+          (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder): XLMRobertaEncoder(
+          (layer): ModuleList(
+            (0-11): 12 x XLMRobertaLayer(
+              (attention): XLMRobertaAttention(
+                (self): XLMRobertaSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): XLMRobertaSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): XLMRobertaIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+                (intermediate_act_fn): GELUActivation()
+              )
+              (output): XLMRobertaOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+          )
+        )
+      )
+      (lm_head): XLMRobertaLMHead(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (decoder): Linear(in_features=768, out_features=250002, bias=True)
+      )
+    )
+    (scalar_mix): ScalarMix()
+  )
+  (char_emb): CharLSTM(
+    (char_embedding): Embedding(2821, 200, padding_idx=0)
+    (char_lstm): LSTM(200, 50, batch_first=True, bidirectional=True)
+  )
+  (_domain_embed): Embedding(3, 8, padding_idx=0)
+)
+Mambaformer(
+  (AM_layers): ModuleList(
+    (0-2): 3 x AM_Layer(
+      (self_attention): AttentionLayer(
+        (inner_attention): FullAttention(
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+        (query_projection): KAN(
+          (layers): ModuleList(
+            (0): KANLinear(
+              (base_activation): SiLU()
+            )
+          )
+        )
+        (key_projection): KAN(
+          (layers): ModuleList(
+            (0): KANLinear(
+              (base_activation): SiLU()
+            )
+          )
+        )
+        (value_projection): KAN(
+          (layers): ModuleList(
+            (0): KANLinear(
+              (base_activation): SiLU()
+            )
+          )
+        )
+        (out_projection): KAN(
+          (layers): ModuleList(
+            (0): KANLinear(
+              (base_activation): SiLU()
+            )
+          )
+        )
+      )
+      (mamba): Mamba(
+        (in_proj): Linear(in_features=200, out_features=400, bias=False)
+        (conv1d): Conv1d(200, 200, kernel_size=(2,), stride=(1,), padding=(1,), groups=200)
+        (act): SiLU()
+        (x_proj): Linear(in_features=200, out_features=29, bias=False)
+        (dt_proj): Linear(in_features=13, out_features=200, bias=True)
+        (out_proj): Linear(in_features=200, out_features=200, bias=False)
+      )
+      (norm1): LayerNorm((200,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((200,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (out_proj): Linear(in_features=200, out_features=200, bias=True)
+)
+MyLSTM(
+  (f_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+  (b_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+)
+MyLSTM(
+  (f_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+  (b_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+)
+MyLSTM(
+  (f_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+  (b_cells): ModuleList(
+    (0): LSTMCell(200, 400)
+    (1-2): 2 x LSTMCell(800, 400)
+  )
+)
+KAN(
+  (layers): ModuleList(
+    (0): KANLinear(
+      (base_activation): SiLU()
+    )
+  )
+)
+KAN(
+  (layers): ModuleList(
+    (0): KANLinear(
+      (base_activation): SiLU()
+    )
+  )
+)
+myLayerNorm((800,), eps=1e-05, elementwise_affine=True)
+BiAffineLayer (in1_features=500, in2_features=500, out_features=1)
+BiAffineLayer (in1_features=100, in2_features=100, out_features=87)
+FeatureMatching(
+  (0-8): 9 x Linear(in_features=800, out_features=800, bias=True)
+)
