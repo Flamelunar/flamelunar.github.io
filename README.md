@@ -3,6 +3,6 @@ https://noteljj.github.io/
 
 # Overall Architecture. ![overall architecture](https://github.com/noteljj/noteljj.github.io/blob/main/our%20model.jpg)
 
-# Dataset Info ![dataset]()
+# Dataset Info. ![dataset](https://github.com/noteljj/noteljj.github.io/blob/main/dataset%20info.png)
 
 # Main Results. ![main results](https://github.com/noteljj/noteljj.github.io/blob/main/main%20results.png)
