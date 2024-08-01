@@ -1,7 +1,8 @@
 # **Dynamic Syntactic Representation Filtering and Injecting Networks for Cross-lingual Dependency Parsing**
 https://noteljj.github.io/
 
-### Download our code. [code.zip](https://github.com/user-attachments/files/16456745/exp-conll-maincode.zip)
+### Download our code. [code.zip]()
+<!--https://github.com/user-attachments/files/16456745/exp-conll-maincode.zip--》
 
 ### Overall Architecture
 <img src="our%20model.jpg" alt="overall architecture">
