@@ -1,5 +1,5 @@
 # **Dynamic Syntactic Representation Filtering and Injecting Networks for Cross-lingual Dependency Parsing**
-https://noteljj.github.io/
+https://flamelunar.github.io
 
 ### Download our code. [code.zip](https://codeload.github.com/noteljj/noteljj.github.io/zip/refs/heads/main)
 <!--https://github.com/user-attachments/files/16456745/exp-conll-maincode.zip-->
