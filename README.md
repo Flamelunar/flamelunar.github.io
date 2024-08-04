@@ -1,8 +1,10 @@
 # **Dynamic Syntactic Representation Filtering and Injecting Networks for Cross-lingual Dependency Parsing**
 https://flamelunar.github.io
 
-### Download our code. [code.zip](https://codeload.github.com/noteljj/noteljj.github.io/zip/refs/heads/main)
-<!--https://github.com/user-attachments/files/16456745/exp-conll-maincode.zip-->
+### Download our code. 
+It will be publicly available in the final version.
+<!--[code.zip](https://codeload.github.com/noteljj/noteljj.github.io/zip/refs/heads/main)-->
+
 
 ### Overall Architecture
 <img src="our%20model.jpg" alt="overall architecture">
