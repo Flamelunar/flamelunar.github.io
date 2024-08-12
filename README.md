@@ -3,6 +3,8 @@ https://flamelunar.github.io
 
 ### Download our code. 
 Our code will be publicly available in the final version.
+
+All source code required for conducting and analyzing the experiments will be made publicly available upon publication of the paper with a license that allows free usage for research purposes.
 <!--[code.zip](https://codeload.github.com/noteljj/noteljj.github.io/zip/refs/heads/main)-->
 
 
