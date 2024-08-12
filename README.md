@@ -2,7 +2,7 @@
 https://flamelunar.github.io
 
 ### Download our code. 
-It will be publicly available in the final version.
+Our code will be publicly available in the final version.
 <!--[code.zip](https://codeload.github.com/noteljj/noteljj.github.io/zip/refs/heads/main)-->
 
 
